@@ -1,0 +1,103 @@
+.bgv{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+.f4l{
+  position: fixed;
+  color: blueviolet;
+  top: 15px;
+  right: 35%;
+  z-index: 2;
+  box-shadow:white 0 0 40px 0px inset;
+}
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 36px;
+  padding-right: 36px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  top: 550px;
+  left: 670px;
+  color: #010535;
+  z-index: 2;
+}
+
+.button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+  font-weight: 300;
+}
+
+.button:active {
+  box-shadow: #D6D6E7 0 0 50px 0;
+  transform: translateY(2px);
+}
+
+#myaudio {
+  position: fixed;
+}
+.cd {
+  position: fixed;
+  right: 4%;
+  top: 2%;
+  width: 100px;
+  height: 100px;
+  background-image: url(".//images/cdimg.png");
+  background-size: cover;
+}
+
+.cd.cdclick {
+  animation: rotate 4s linear infinite; 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cdcover{
+  position: fixed;
+  right: 3.5%;
+  top: 9%;
+  background-image: url(".//images/whomi.jpg");
+  background-size: cover;
+  height: 105px;
+  width: 110px;
+  border-radius: 3%;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.361);
+}
